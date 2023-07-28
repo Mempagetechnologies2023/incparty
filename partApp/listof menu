@@ -1,0 +1,102 @@
+<ul>
+            <li class="dropdown">
+                <a>About Party</a>
+                <ul>
+                    <li><a>Philosophy</a></li>
+                    <li><a>History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Founders of Party</a>
+                <ul>
+                    <li><a>Founder1</a></li>
+                    <li><a>Founder2</a></li>
+                    <li><a>Founder3</a></li>
+                    <li><a>Founder4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Life and History of Leaders</a>
+                <ul>
+                    <li><a>Leader1</a></li>
+                    <li><a>Leader2</a></li>
+                    <li><a>Leader3</a></li>
+                    <li><a>Leader4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Party in parliament</a>
+                <ul>
+                    <li><a>Loksabha Members</a></li>
+                    <li><a>Rajyasabha Members</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Organisations</a>
+                <ul>
+                    <li><a>Name1</a></li>
+                    <li><a>Name2</a></li>
+                    <li><a>Name3</a></li>
+                    <li><a>Name4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Morcha</a>
+                <ul>
+                    <li><a>Morcha Name1</a></li>
+                    <li><a>Morcha Name2</a></li>
+                    <li><a>Morcha Name3</a></li>
+                    <li><a></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Literature and Songs</a>
+                <ul>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Media Resources</a>
+                <ul>
+                    <li><a>Newspaper</a></li>
+                    <li><a>Speech</a></li>
+                    <li><a>Interviews</a></li>
+                    <li><a>Articles</a></li>
+                    <li><a>Photo Gallery</a></li>
+                    <li><a>Video Gallery</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Upcomming Events</a>
+                <ul>
+                    <li><a>Event1</a></li>
+                    <li><a>Event2</a></li>
+                    <li><a>Event3</a></li>
+                    <li><a>Event4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Recent Events</a>
+                <ul>
+                    <li><a>Event1</a></li>
+                    <li><a>Event2</a></li>
+                    <li><a>Event3</a></li>
+                    <li><a>Event4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Current News</a>
+                <ul>
+                    <li><a>News1</a></li>
+                    <li><a>News2</a></li>
+                    <li><a>News3</a></li>
+                    <li><a></a></li>
+                </ul>
+            </li>
+            <li>
+                <a></a>
+            </li>
+        </ul>

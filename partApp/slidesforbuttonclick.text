@@ -1,0 +1,71 @@
+for (let j=1; j<4; j++){
+    if(j===1){
+buton1Ele1.addEventListener('click',(e)=>{
+   let can1Ele=document.getElementById('can'+j);
+   let can2Ele=document.getElementById('can'+j+1);
+   let can3Ele=document.getElementById('can'+j+2);
+   let can4Ele=document.getElementById('can'+j+3);
+   let can5Ele=document.getElementById('can'+j+4);
+   let can6Ele=document.getElementById('can'+j+4);
+   let can7Ele=document.getElementById('can'+j+6);
+   let can8Ele=document.getElementById('can'+j+7);
+   let can9Ele=document.getElementById('can'+j+8);
+
+   can1Ele.classList.remove('d-none');
+   can2Ele.classList.remove('d-none');
+   can3Ele.classList.remove('d-none');
+   can4Ele.classList.add('d-none');
+   can5Ele.classList.add('d-none');
+   can6Ele.classList.add('d-none');
+   can7Ele.classList.add('d-none');
+   can8Ele.classList.add('d-none');
+   can9Ele.classList.add('d-none'); 
+})
+}
+if(j===2){
+    buton1Ele2.addEventListener('click',(e)=>{
+       let can1Ele=document.getElementById('can'+j-1);
+       let can2Ele=document.getElementById('can'+j);
+       let can3Ele=document.getElementById('can'+j+1);
+       let can4Ele=document.getElementById('can'+j+2);
+       let can5Ele=document.getElementById('can'+j+3);
+       let can6Ele=document.getElementById('can'+j+4);
+       let can7Ele=document.getElementById('can'+j+5);
+       let can8Ele=document.getElementById('can'+j+6);
+       let can9Ele=document.getElementById('can'+j+7);
+    
+       can1Ele.classList.add('d-none');
+       can2Ele.classList.add('d-none');
+       can3Ele.classList.add('d-none');
+       can4Ele.classList.remove('d-none');
+       can5Ele.classList.remove('d-none');
+       can6Ele.classList.remove('d-none');
+       can7Ele.classList.add('d-none');
+       can8Ele.classList.add('d-none');
+       can9Ele.classList.add('d-none'); 
+    })
+    }
+    if(j===3){
+        buton1Ele3.addEventListener('click',(e)=>{
+           let can1Ele=document.getElementById('can'+j-2);
+           let can2Ele=document.getElementById('can'+j-1);
+           let can3Ele=document.getElementById('can'+j);
+           let can4Ele=document.getElementById('can'+j+1);
+           let can5Ele=document.getElementById('can'+j+2);
+           let can6Ele=document.getElementById('can'+j+3);
+           let can7Ele=document.getElementById('can'+j+4);
+           let can8Ele=document.getElementById('can'+j+5);
+           let can9Ele=document.getElementById('can'+j+6);
+        
+           can1Ele.classList.add('d-none');
+           can2Ele.classList.add('d-none');
+           can3Ele.classList.add('d-none');
+           can4Ele.classList.add('d-none');
+           can5Ele.classList.add('d-none');
+           can6Ele.classList.add('d-none');
+           can7Ele.classList.remove('d-none');
+           can8Ele.classList.remove('d-none');
+           can9Ele.classList.remove('d-none'); 
+        })
+        }
+}

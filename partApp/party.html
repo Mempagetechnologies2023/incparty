@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*.bg-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: hidden;
+        
+        }
+        .btn-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .card{
+            width:390px;
+            height:450px;
+            margin:15px;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cir{
+            background-color: aqua;
+            width:5px;
+            height:12px;
+            margin:20px;
+            border-radius:10px;
+            border:none;
+        }
+        .igm{
+            width:390px;
+            height:390px;
+            margin:;
+        
+           
+        }
+        .igm-card{
+          height:100%;
+          width:100%;
+        }
+        div div .igm:hover{
+          width:392px;
+            height:392px;
+           
+        }*/
+        
+    </style>
+    <link href="//db.onlinewebfonts.com/c/de6bdc9a5c28edd91c3229b508d20c0a?family=HASTON+DEMO" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--swipre css link-->
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="party.css">
+    <link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+<body>
+    <div id="splash" class="splash"></div>
+    <nav id="header" class="header pt-2 pr-2 pl-2 bg-image d-none">
+       <div class="d-flex flex-column">
+          <div><img class="donate" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677048423/donate2_w4ovjh.webp"/>          </div>
+          <div id="menuicon" class="menubar" style="text-align:center">
+            <i onclick="menulist()" class="fa-solid fa-bars"></i>
+          </div> 
+     </div>
+       <div class="">
+         <img class="hand" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677067082/Hand_INC.svg_ofv8m8.png"/>
+       </div> 
+       <div class="">
+          <span class='partyname'>Indian National Congress Party </span>
+       </div> 
+       <div class=""> 
+          <img class="image" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677083747/Rahul_Gandhi_2019_Official_Portrail-removebg-preview_pn3n7k.png"/>
+
+       </div>
+      
+       
+
+      
+       <div class="icons">
+     
+       <div class="icon ml-4">
+
+         <div style="width:4vw;height:4vw">
+            <a target="_blank" href="https://www.instagram.com/incindia/"><img class="mediaimages m-1" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677046254/icon-g836bd65a9_1280_xmdp3f.png"/></a>
+         </div>
+         <div style="width:4vw;height:4vw">
+            <a target="_blank" href="https://twitter.com/INCIndia/"><img class="mediaimages m-1" style="border-radius:10px" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677046268/twitter-3267256__480_wlcrlg.jpg"/></a>
+         </div>
+         <div style="width:4vw;height:4vw"> 
+            <a target="_blank" href="https://www.facebook.com/IndianNationalCongress"><img class="mediaimages m-1" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677047067/facebooknew_gjvkge.webp"/></a>
+         </div>
+        </div>  
+        <div class="join ml-4"> 
+         
+          <a class="joinbtn" href="https://www.inc.in/join-the-party/volunteer" target="_blank">Join</a>
+    
+        </div>
+      
+       
+    </div>
+   
+</nav>
+<div id="main" class="d-none">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+          
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411320/Anthem-Banner-1_cwavcc.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411319/1920x640-Map-Fin-1_psjvtb.jpg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411320/Thumbnail-26-1920x640-1_play88.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411320/Bharat-Yatris-Website-3_jp9kjr.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411320/mashaal-1920x640-1_wxwbxr.jpg" alt="Third slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677411320/flag-1920x640-1_k2bo9v.jpg" alt="Third slide">
+          </div>
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+      <div class="d-flex justify-content-center mb-5 mt-3 p-3" style="background-color:#ffffff"><a style="background-color:#4682B4;padding:5px;border-radius:10px" target="_blank" href="https://www.bharatjodoyatra.in/">View More</a></div>
+
+    <div class="philocontainer">
+       <div> <h3 class="philoheading">About The Party</h3>
+        <P class="philopara">
+            The Indian National Congress is a political party that has played a pivotal role in shaping India's history and future. Founded in 1885, it is one of the oldest and most prominent political parties in India.
+From its inception, the Indian National Congress has been at the forefront of the country's freedom struggle against colonial rule. It was instrumental in leading India to independence from the British Empire in 1947, and since then, it has played a vital role in shaping India's socio-economic and political landscape.
+The Indian National Congress has a rich legacy of leadership, including iconic figures such as Mahatma Gandhi, Jawaharlal Nehru, and Indira Gandhi. These leaders have not only contributed significantly to India's independence but have also been instrumental in shaping the country's vision for a modern and prosperous future.
+The Congress has also been a champion of India's pluralistic society and secular values. It has been at the forefront of advocating for the rights of marginalized communities, promoting social justice, and striving towards equality for all.
+In recent times, the Indian National Congress has undergone significant changes and reorganizations to remain relevant and responsive to the changing political landscape. It has adopted new policies and strategies to address the emerging challenges faced by the country and its people.
+Today, the Indian National Congress remains a vital political force in India, with a committed base of supporters and leaders who continue to strive for a better and brighter future for the country. Its legacy of service, sacrifice, and leadership has inspired generations of Indians to contribute to the country's development and progress.
+In conclusion, the Indian National Congress is a storied political party that has left an indelible mark on India's history and continues to play a vital role in shaping the country's future. Its commitment to the values of democracy, secularism, and social justice is an inspiration to all those who seek to build a better world.
+
+        </P></div>
+        <div>
+            <img class="philotimg" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677223373/About_the_party_wtpnix.jpg"/>
+        </div>
+    </div>
+    <div style="background-color:#D0D3D4" class="philocontainer">
+        <div><h3 class="philoheading">Our Philosophy</h3>
+        <P class="philopara">
+            The philosophy of the Indian National Congress is based on the principles of democracy, secularism, and socialism. It seeks to uphold the values of equality, social justice, and human rights, and aims to create a society that is inclusive and equitable.
+The Congress believes in a decentralized political system that promotes local self-government and empowers people at the grassroots level. It also advocates for the protection of the rights and freedoms of individuals, and seeks to ensure that all citizens have access to basic necessities such as education, healthcare, and employment opportunities.
+The party's philosophy is deeply rooted in India's history and cultural heritage, and it draws inspiration from the country's struggle for independence and the teachings of great leaders like Mahatma Gandhi and Jawaharlal Nehru. The Congress seeks to promote harmony and unity among diverse communities in India, and works towards building a just and peaceful society for all.
+
+        </P>
+        </div>
+        <div>
+            <img class="philotimg" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677224579/Philosophy_tw2l3l.jpg"/>
+        </div>
+    </div>
+    <div style="background-color:#ffffff" class="philocontainer">
+        <div><h3 class="philoheading">History of party</h3>
+        <P class="philopara">
+            The Indian National Congress (INC) is an iconic political party that has shaped the course of Indian history. Established in 1885, the Congress played a vital role in India's fight for independence and produced some of the country's greatest leaders.
+From Mahatma Gandhi's non-violent struggle for freedom to Jawaharlal Nehru's vision of a socialist India, the Congress has left an indelible mark on India's political and social landscape. The party has faced its fair share of challenges over the years, but its commitment to democracy, secularism, and social justice has remained unwavering.
+Even after India gained independence, the Congress continued to lead the country and played a crucial role in shaping its future. The party's progressive policies paved the way for land reforms, the expansion of public education, and the growth of a socialist economy.
+Today, the Indian National Congress continues to inspire millions of people across India and around the world. Its legacy of promoting inclusivity, justice, and equality remains relevant in the modern world and continues to shape the political discourse in India.
+
+        </P>
+        </div>
+        <div>
+            <img class="philotimg" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677232495/History_of_the_party_dhzcet.jpg"/>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mb-5" style="background-color:#ffffff"><a class="p-1" style="background-color:#4682B4;padding:5px;border-radius:10px" target="_blank" href="https://www.inc.in/brief-history-of-congress">View All</a></div>
+
+    <div class="d-flex flex-column can-container pt-3 pb-5">
+        <h2 class="philoheading ml-5">OUR INSPIRATION</h2>
+        <div class="bg-container">
+            <div class="card"  id="can1">
+                <div class="igm">
+                    <a target="_blank" href="https://www.inc.in/our-inspiration/mahatma-gandhi">
+
+                      <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488171/gandhi_guru5m.jpg"/>
+                    </a>
+                    </div>
+
+                 <div class="card-belowsec">
+                  <h5>Sri Mahathma Gandhi</h5>
+                  <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/mahatma-gandhi">
+                    View More
+                  </a>
+                </div>
+            </div>
+                      
+
+            <div class="card"  id="can2">
+                    <div class="igm">
+                        <a target="_blank" href="https://www.inc.in/our-inspiration/pandit-jawaharlal-nehru"> 
+
+                          <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488172/jawaharlal_tntdua.jpg"/>
+                         </a>             
+                    </div>                
+                    <div class="card-belowsec">                  
+                      <h5>Sri Pandit Jawaharlal Nehru</h5>
+                  <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/pandit-jawaharlal-nehru"> 
+                    View More
+                  </a>
+              </div>
+            </div>
+            <div class="card" id="can3">
+                    <div class="igm">
+                        <a target="_blank" href="https://www.inc.in/our-inspiration/sardar-vallabhbhai-patel">
+                              <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677318521/SARDAR_VALLABHBHAI_PATEL_fwdmuk.png"/>
+                        </a>     
+                    </div>                
+                    <div class="card-belowsec">                  
+                      <h5>Sri Sardar Vallabhai Patel</h5>
+                <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/sardar-vallabhbhai-patel">
+                    View More
+                  </a>
+                </div>
+            </div>
+            <div class="card d-none" id="can4">
+                <div class="igm">
+                    <a target="_blank" href="https://www.inc.in/our-inspiration/dr-b-r-ambedkar">
+                      <img class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677318519/Dr_babasaheb_ambedkar_photo_dnguzz.png"/>
+                    </a>
+                </div>
+                <div class="card-belowsec">                  
+                  <h5>Dr.B.R Ambedkar</h5>
+                <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/dr-b-r-ambedkar">
+                    View More
+                </a>
+              </div>
+            </div>
+            <div class="card d-none" id="can5">
+                <div class="igm">
+                    <a target="_blank" href="https://www.inc.in/our-inspiration/babu-jagjivan-ram">
+                      <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488171/jagjivan_ah0xph.jpg"/>
+                    </a>
+                    </div>
+                    <div class="card-belowsec">                  
+                      <h5>Sri Babu Jagjivan Ram</h5>
+                <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/babu-jagjivan-ram">
+                    View More
+                  </a>
+                </div>
+            </div>
+            <div class="card d-none" id="can6">
+                <div class="igm">
+                    <a class="igm-card" target="_blank" href="https://www.inc.in/our-inspiration/shri-k-kamaraj">
+                      <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488490/kamraj_xxgilv.jpg"/>
+                    </a> 
+                </div>
+                <div class="card-belowsec">                  
+                  <h5>Sri K.Kamraj</h5>
+                  <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/shri-k-kamaraj">
+                    View More
+                  </a>
+                </div>
+            </div>
+            <div class="card d-none" id="can7">
+                <div class="igm">
+                <a target="_blank" href="https://www.inc.in/our-inspiration/smt-indira-gandhi">   
+                  <img  class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677318519/Indira_Gandhi_x5jfh9.png"/>
+                </a>
+                </div>
+                <div class="card-belowsec">                  
+                  <h5>Sri Indira Gandhi</h5>
+                <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/smt-indira-gandhi">   
+                    View More
+                  </a>
+                </div>
+            </div>
+             <div class="card d-none" id="can8">
+                <div class="igm">
+                    <a target="_blank" href="https://www.inc.in/our-inspiration/shri-rajiv-gandhi">
+                      <img class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488172/rahul_w5xjko.jpg"/>
+                    </a> 
+                </div>
+                <div class="card-belowsec">                  
+                  <h5>Sri Rajiv Gandhi</h5>
+                  <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/shri-rajiv-gandhi">
+                    View More
+                  </a>
+                </div>
+            </div>
+             <div class="card d-none" id="can9">
+                <div class="igm">
+                  <a target="_blank" href="https://www.inc.in/our-inspiration/dr-manmohan-singh">
+                    <img class="igm-card" src="https://res.cloudinary.com/daih6rnto/image/upload/v1677488172/man_watb9b.jpg"/>
+                  </a>
+                </div>
+                <div class="card-belowsec">                 
+                   <h5>DR.Manmohan singh</h5>
+                  <a class="p-1" target="_blank" href="https://www.inc.in/our-inspiration/dr-manmohan-singh">
+                    View More
+                  </a>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container d-flex justify-content-center">
+            <button id="buton1" class='cir'></button>
+            <button id="buton2" class='cir'></button>
+            <button id="buton3" class='cir'></button>
+           <!---- <button id="buton4" class="cir"></button>-->
+        </div>
+        <div class="d-flex justify-content-center"><a style="color:azure;padding:5px" target="_blank" href="https://www.inc.in/our-inspiration">View More</a></div>
+    </div>
+ 
+    <div id="menulist" class="menu d-none">
+        <ul style="text-align:start">
+            <a>Home</a><span style="margin-left:85px" ><i id="Xmark" class="fa-solid fa-xmark"></i></span> 
+        </ul>
+        <ul>
+            <li>
+                <a target="_blank" href="https://www.inc.in/in-focus">Focus</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://manifesto.inc.in/en/">Manifesto</a>
+            </li>
+            <li class="dropdown">
+                <a>About Party</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.inc.in/our-values">Philosophy</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/brief-history-of-congress">History</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a target="_blank" href="https://www.inc.in/our-inspiration">Founders of Party</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/mahatma-gandhi">Gandhi</a></li>
+                    <li><a target="_blank" hef="https://www.inc.in/our-inspiration/pandit-jawaharlal-nehru">Jawaharlal Nehru</a></li>
+                 <!----   <li><a target="_blank" href="https://www.inc.in/our-inspiration/dr-b-r-ambedkar">Dr.B.R.Ambedkar</a></li>
+                 -->
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/sardar-vallabhbhai-patel">Sardar Vallahbhai Patel</a></li>
+                   
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>History of Leaders</a>
+                <ul>
+                    <li><a target="_blank" hef="https://www.inc.in/our-inspiration/pandit-jawaharlal-nehru">Jawaharlal Nehru</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/dr-b-r-ambedkar">Dr.B.R.Ambedkar</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/sardar-vallabhbhai-patel">Sardar Vallahbhai Patel</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/smt-indira-gandhi">Indira Gandhi</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/shri-rajiv-gandhi">Rajiv Gandhi</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/our-inspiration/dr-manmohan-singh">Manmohan Singh</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/rahul-gandhi-speaks">Rahul Gandhi</a></li>
+                    <li><a target="_blank" href="">Leader4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a target="_blank" href="https://www.inc.in/our-achievements">Achievements</a></li>
+            <li class="dropdown">
+                <a>Party in parliament</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.inc.in/lok-sabha-members">Loksabha Members</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/rajya-sabha-members">Rajyasabh Members</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Organisations</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.inc.in/congress-seva-dal">Congress Seva Dal</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/indian-youth-congress">IYC</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/all-india-mahila-congress">AIMC</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/intuc">INTUC</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/nsui">NSUI</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a target="_blank" href="https://www.inc.in/key-issues">Key Isues</a>
+            </li>
+            <li class="dropdown">
+                <a>Morcha</a>
+                <ul>
+                    <li><a>Morcha Name1</a></li>
+                    <li><a>Morcha Name2</a></li>
+                    <li><a>Morcha Name3</a></li>
+                    <li><a></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Literature and Songs</a>
+                <ul>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </li>
+           
+            <li class="dropdown">
+                <a>Media Resources</a>
+                <ul>
+                    <li><a target="_blank" src="https://www.youtube.com/user/indiacongress">Youtube</a>
+                    </li>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UC1DtEMePmr4O6F2do6BVl7A">Rahul Gandhi Speaks</a></li>
+                    <li><a target="_blank" src="https://www.youtube.com/results?search_query=sonia+gandhi+speechs+about+inc">Sonia Gandhi Speaks</a></li> 
+                    <li><a target="_blank" href="https://www.youtube.com/results?search_query=priyanka+gandhi+speechs+about+inc">Priyanka Gandi Speaks</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/media/speeches">Speechs of Leaders</a></li>
+
+                    <li><a target="_blank" href="">Interviews</a></li>
+                    <li><a>Articles</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/media/photos">Photo Gallery</a></li>
+                    <li><a target="_blank" href="https://www.inc.in/media/videos">Video Gallery</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Upcomming Events</a>
+                <ul>
+                    <li><a>Event1</a></li>
+                    <li><a>Event2</a></li>
+                    <li><a>Event3</a></li>
+                    <li><a>Event4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a target="_blank" href="https://www.inc.in/events-calendar">Recent Events</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.youtube.com/channel/UCzk56dN-IkOu9_-Suja95Nw">Bharat Jodo Yatra</a></li>
+                    <li><a>Event2</a></li>
+                    <li><a>Event3</a></li>
+                    <li><a>Event4</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a>Current News</a>
+                <ul>
+                    <li><a target="_blank" href="https://www.outlookindia.com/national/ec-issues-notices-to-bjp-congress-in-tripura-for-election-law-violation-news-262664">Outlook</a></li>
+                    <li><a target="_blank" href="https://timesofindia.indiatimes.com/elections/assembly-elections/meghalaya/news/indian-national-congress/articleshow/97888640.cms">Times India</a></li>
+                    <li><a target="_blank" href="https://www.thehindu.com/news/national/ahead-of-raipur-plenary-congress-leaders-debate-need-for-cwc-elections/article66529019.ece">Hindu</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </div>
+</div>   
+<script type="text/javascript" src="party.js"></script>
+
+    </body>
+    <script>
+        let buton1Ele1=document.getElementById('buton1');
+        let buton1Ele2=document.getElementById('buton2');
+        let buton1Ele3=document.getElementById('buton3');
+        let buton1Ele4=document.getElementById('buton4');
+
+
+        let slide=function(){
+        let i=1;
+        const intervalId =setInterval(function(){
+
+          if(i===1){
+            buton1Ele1.style.backgroundColor='blue';
+            buton1Ele2.style.backgroundColor='white';
+            buton1Ele3.style.backgroundColor='white';
+          }
+          if(i===4){
+            buton1Ele1.style.backgroundColor='white';
+            buton1Ele2.style.backgroundColor='blue';
+            buton1Ele3.style.backgroundColor='white';  
+          }
+          if(i===7){
+            buton1Ele1.style.backgroundColor='white';
+            buton1Ele2.style.backgroundColor='white';
+            buton1Ele3.style.backgroundColor='blue';  
+          }
+
+        let prevcanEle=document.getElementById('can'+i);
+        let nextcanEle=document.getElementById('can'+(i+3));
+        setTimeout(function(){
+         prevcanEle.classList.add('d-none');
+         nextcanEle.classList.remove('d-none');
+       },1000)
+      i=i+1;
+},1000);
+
+setTimeout(function() {
+ clearInterval(intervalId);
+ let firstEle=document.getElementById('can'+1);
+ let secEle=document.getElementById('can'+2);
+ let thirdEle=document.getElementById('can'+3);
+ let lastdEle=document.getElementById('can'+9);
+ let lastsecdEle=document.getElementById('can'+8);
+ let lastthirddEle=document.getElementById('can'+7);
+
+ firstEle.classList.remove('d-none');
+ secEle.classList.remove('d-none');
+ thirdEle.classList.remove('d-none');
+ lastdEle.classList.add('d-none');
+ lastsecdEle.classList.add('d-none');
+ lastthirddEle.classList.add('d-none');
+ slide();
+}, 9000);
+}
+
+slide();
+
+    </script>
+   
+</html>
